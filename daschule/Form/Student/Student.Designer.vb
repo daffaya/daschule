@@ -44,6 +44,7 @@ Partial Class Student
         Me.colGender = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colBirthPlace = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.colBirthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnAddData = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -222,10 +223,10 @@ Partial Class Student
         '
         'btnEditData
         '
-        Me.btnEditData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnEditData.BackColor = System.Drawing.Color.LightGray
         Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnEditData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnEditData.Location = New System.Drawing.Point(659, 96)
+        Me.btnEditData.Location = New System.Drawing.Point(666, 96)
         Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
         Me.btnEditData.Name = "btnEditData"
         Me.btnEditData.Size = New System.Drawing.Size(75, 23)
@@ -281,11 +282,26 @@ Partial Class Student
         Me.colBirthday.Name = "colBirthday"
         Me.colBirthday.Width = 125
         '
+        'btnAddData
+        '
+        Me.btnAddData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnAddData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnAddData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnAddData.Location = New System.Drawing.Point(578, 96)
+        Me.btnAddData.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnAddData.Name = "btnAddData"
+        Me.btnAddData.Size = New System.Drawing.Size(75, 23)
+        Me.btnAddData.TabIndex = 9
+        Me.btnAddData.Text = "Add Data"
+        Me.btnAddData.UseMnemonic = False
+        Me.btnAddData.UseVisualStyleBackColor = False
+        '
         'Student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(859, 450)
+        Me.Controls.Add(Me.btnAddData)
         Me.Controls.Add(Me.DGSiswa)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.btnEditData)
@@ -329,4 +345,5 @@ Partial Class Student
     Friend WithEvents colGender As DataGridViewTextBoxColumn
     Friend WithEvents colBirthPlace As DataGridViewTextBoxColumn
     Friend WithEvents colBirthday As DataGridViewTextBoxColumn
+    Friend WithEvents btnAddData As Button
 End Class
