@@ -326,7 +326,7 @@ Partial Class Grade
         Me.Panel1.Location = New System.Drawing.Point(1, 2)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(913, 103)
+        Me.Panel1.Size = New System.Drawing.Size(947, 103)
         Me.Panel1.TabIndex = 9
         '
         'Label1
