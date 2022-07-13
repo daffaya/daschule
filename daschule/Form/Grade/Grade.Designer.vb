@@ -23,54 +23,58 @@ Partial Class Grade
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Grade))
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.DGSiswa = New System.Windows.Forms.DataGridView()
+        Me.btnDelete = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.btnClass = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.DGSiswa = New System.Windows.Forms.DataGridView()
+        Me.btnTeacher = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.colStudent = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colSubjectName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colKKM = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGrade = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btnSubject = New System.Windows.Forms.Label()
         Me.btnAddData = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.btnEditData = New System.Windows.Forms.Button()
-        Me.Panel2.SuspendLayout()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnStudent = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.DGSiswa, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.DGSiswa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel2
+        'DGSiswa
         '
-        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.PictureBox5)
-        Me.Panel2.Controls.Add(Me.PictureBox4)
-        Me.Panel2.Controls.Add(Me.PictureBox3)
-        Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Controls.Add(Me.Label12)
-        Me.Panel2.Controls.Add(Me.Label11)
-        Me.Panel2.Controls.Add(Me.Label10)
-        Me.Panel2.Controls.Add(Me.PictureBox1)
-        Me.Panel2.Controls.Add(Me.Label9)
-        Me.Panel2.Controls.Add(Me.Label2)
-        Me.Panel2.Location = New System.Drawing.Point(1, 85)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(159, 354)
-        Me.Panel2.TabIndex = 10
+        Me.DGSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGSiswa.Location = New System.Drawing.Point(177, 142)
+        Me.DGSiswa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.DGSiswa.Name = "DGSiswa"
+        Me.DGSiswa.RowHeadersWidth = 51
+        Me.DGSiswa.RowTemplate.Height = 29
+        Me.DGSiswa.Size = New System.Drawing.Size(612, 262)
+        Me.DGSiswa.TabIndex = 13
+        '
+        'btnDelete
+        '
+        Me.btnDelete.BackColor = System.Drawing.Color.DarkRed
+        Me.btnDelete.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnDelete.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnDelete.Location = New System.Drawing.Point(727, 106)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.TabIndex = 23
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseMnemonic = False
+        Me.btnDelete.UseVisualStyleBackColor = False
         '
         'PictureBox5
         '
@@ -116,41 +120,17 @@ Partial Class Grade
         Me.PictureBox2.TabIndex = 7
         Me.PictureBox2.TabStop = False
         '
-        'Label12
+        'btnClass
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(42, 260)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(59, 20)
-        Me.Label12.TabIndex = 6
-        Me.Label12.Text = "Grade"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label11.Location = New System.Drawing.Point(42, 213)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(53, 20)
-        Me.Label11.TabIndex = 5
-        Me.Label11.Text = "Class"
-        Me.Label11.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(42, 164)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(82, 20)
-        Me.Label10.TabIndex = 4
-        Me.Label10.Text = "Students"
-        Me.Label10.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btnClass.AutoSize = True
+        Me.btnClass.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnClass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnClass.Location = New System.Drawing.Point(42, 213)
+        Me.btnClass.Name = "btnClass"
+        Me.btnClass.Size = New System.Drawing.Size(46, 19)
+        Me.btnClass.TabIndex = 5
+        Me.btnClass.Text = "Class"
+        Me.btnClass.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'PictureBox1
         '
@@ -163,38 +143,73 @@ Partial Class Grade
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
         '
-        'Label9
+        'btnTeacher
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(42, 112)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(74, 20)
-        Me.Label9.TabIndex = 2
-        Me.Label9.Text = "Teacher"
-        Me.Label9.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.btnTeacher.AutoSize = True
+        Me.btnTeacher.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnTeacher.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnTeacher.Location = New System.Drawing.Point(42, 112)
+        Me.btnTeacher.Name = "btnTeacher"
+        Me.btnTeacher.Size = New System.Drawing.Size(67, 19)
+        Me.btnTeacher.TabIndex = 2
+        Me.btnTeacher.Text = "Teacher"
+        Me.btnTeacher.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'Label2
+        'Label3
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(42, 58)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(70, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Subject"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Lato Black", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(190, 106)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(63, 23)
+        Me.Label3.TabIndex = 19
+        Me.Label3.Text = "Grade"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'Panel1
+        'btnSubject
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(1, 2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(799, 77)
-        Me.Panel1.TabIndex = 9
+        Me.btnSubject.AutoSize = True
+        Me.btnSubject.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnSubject.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnSubject.Location = New System.Drawing.Point(42, 58)
+        Me.btnSubject.Name = "btnSubject"
+        Me.btnSubject.Size = New System.Drawing.Size(63, 19)
+        Me.btnSubject.TabIndex = 1
+        Me.btnSubject.Text = "Subject"
+        Me.btnSubject.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
+        'btnAddData
+        '
+        Me.btnAddData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnAddData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnAddData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnAddData.Location = New System.Drawing.Point(552, 106)
+        Me.btnAddData.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnAddData.Name = "btnAddData"
+        Me.btnAddData.Size = New System.Drawing.Size(75, 23)
+        Me.btnAddData.TabIndex = 22
+        Me.btnAddData.Text = "Add Data"
+        Me.btnAddData.UseMnemonic = False
+        Me.btnAddData.UseVisualStyleBackColor = False
+        '
+        'Panel2
+        '
+        Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.btnStudent)
+        Me.Panel2.Controls.Add(Me.PictureBox5)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Controls.Add(Me.PictureBox4)
+        Me.Panel2.Controls.Add(Me.PictureBox3)
+        Me.Panel2.Controls.Add(Me.PictureBox2)
+        Me.Panel2.Controls.Add(Me.btnClass)
+        Me.Panel2.Controls.Add(Me.PictureBox1)
+        Me.Panel2.Controls.Add(Me.btnTeacher)
+        Me.Panel2.Controls.Add(Me.btnSubject)
+        Me.Panel2.Location = New System.Drawing.Point(3, 85)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(159, 354)
+        Me.Panel2.TabIndex = 18
         '
         'Label1
         '
@@ -208,129 +223,102 @@ Partial Class Grade
         Me.Label1.Text = "daschule"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'DGSiswa
-        '
-        Me.DGSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGSiswa.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colStudent, Me.colSubjectName, Me.colKKM, Me.colGrade})
-        Me.DGSiswa.Location = New System.Drawing.Point(177, 142)
-        Me.DGSiswa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DGSiswa.Name = "DGSiswa"
-        Me.DGSiswa.RowHeadersWidth = 51
-        Me.DGSiswa.RowTemplate.Height = 29
-        Me.DGSiswa.Size = New System.Drawing.Size(612, 262)
-        Me.DGSiswa.TabIndex = 13
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Lato Black", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(177, 96)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(91, 23)
-        Me.Label3.TabIndex = 11
-        Me.Label3.Text = "Database"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'colStudent
-        '
-        Me.colStudent.HeaderText = "Student Name"
-        Me.colStudent.MinimumWidth = 6
-        Me.colStudent.Name = "colStudent"
-        Me.colStudent.Width = 156
-        '
-        'colSubjectName
-        '
-        Me.colSubjectName.HeaderText = "Subject Name"
-        Me.colSubjectName.MinimumWidth = 6
-        Me.colSubjectName.Name = "colSubjectName"
-        Me.colSubjectName.Width = 172
-        '
-        'colKKM
-        '
-        Me.colKKM.HeaderText = "KKM"
-        Me.colKKM.MinimumWidth = 6
-        Me.colKKM.Name = "colKKM"
-        Me.colKKM.Width = 125
-        '
-        'colGrade
-        '
-        Me.colGrade.HeaderText = "Grade"
-        Me.colGrade.MinimumWidth = 6
-        Me.colGrade.Name = "colGrade"
-        Me.colGrade.Width = 125
-        '
-        'btnAddData
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(1, 2)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(913, 103)
-        Me.Panel1.TabIndex = 9
-        '
         'btnEditData
         '
         Me.btnEditData.BackColor = System.Drawing.Color.LightGray
         Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnEditData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnEditData.Location = New System.Drawing.Point(667, 96)
+        Me.btnEditData.Location = New System.Drawing.Point(640, 106)
         Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
         Me.btnEditData.Name = "btnEditData"
         Me.btnEditData.Size = New System.Drawing.Size(75, 23)
-        Me.btnEditData.TabIndex = 12
+        Me.btnEditData.TabIndex = 20
         Me.btnEditData.Text = "Edit Data"
         Me.btnEditData.UseMnemonic = False
         Me.btnEditData.UseVisualStyleBackColor = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Location = New System.Drawing.Point(3, 2)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(799, 77)
+        Me.Panel1.TabIndex = 17
+        '
+        'btnStudent
+        '
+        Me.btnStudent.BackColor = System.Drawing.Color.LightGray
+        Me.btnStudent.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnStudent.Location = New System.Drawing.Point(42, 157)
+        Me.btnStudent.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnStudent.Name = "btnStudent"
+        Me.btnStudent.Size = New System.Drawing.Size(75, 34)
+        Me.btnStudent.TabIndex = 20
+        Me.btnStudent.Text = "Student"
+        Me.btnStudent.UseMnemonic = False
+        Me.btnStudent.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.LightGray
+        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(42, 250)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 34)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "Grade"
+        Me.Button1.UseMnemonic = False
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Grade
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(829, 456)
-        Me.Controls.Add(Me.btnAddData)
-        Me.Controls.Add(Me.DGSiswa)
-        Me.Controls.Add(Me.btnEditData)
+        Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.btnAddData)
         Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.btnEditData)
         Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.DGSiswa)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Grade"
         Me.Text = "Grade"
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
+        CType(Me.DGSiswa, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.DGSiswa, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Panel2 As Panel
+    Friend WithEvents DGSiswa As DataGridView
+    Friend WithEvents btnDelete As Button
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents btnClass As Label
     Protected Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents DGSiswa As DataGridView
-    Friend WithEvents colStudent As DataGridViewTextBoxColumn
-    Friend WithEvents colSubjectName As DataGridViewTextBoxColumn
-    Friend WithEvents colKKM As DataGridViewTextBoxColumn
-    Friend WithEvents colGrade As DataGridViewTextBoxColumn
+    Friend WithEvents btnTeacher As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnSubject As Label
     Friend WithEvents btnAddData As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label1 As Label
     Friend WithEvents btnEditData As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnStudent As Button
+    Friend WithEvents Button1 As Button
 End Class

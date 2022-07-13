@@ -26,13 +26,12 @@ Partial Class Student
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnGrade = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.btnGrade = New System.Windows.Forms.Label()
         Me.btnClass = New System.Windows.Forms.Label()
-        Me.btnStudents = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnTeacher = New System.Windows.Forms.Label()
         Me.btnSubject = New System.Windows.Forms.Label()
@@ -46,6 +45,7 @@ Partial Class Student
         Me.colBirthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnAddData = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnStudent = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -80,13 +80,13 @@ Partial Class Student
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.btnStudent)
+        Me.Panel2.Controls.Add(Me.btnGrade)
         Me.Panel2.Controls.Add(Me.PictureBox5)
         Me.Panel2.Controls.Add(Me.PictureBox4)
         Me.Panel2.Controls.Add(Me.PictureBox3)
         Me.Panel2.Controls.Add(Me.PictureBox2)
-        Me.Panel2.Controls.Add(Me.btnGrade)
         Me.Panel2.Controls.Add(Me.btnClass)
-        Me.Panel2.Controls.Add(Me.btnStudents)
         Me.Panel2.Controls.Add(Me.PictureBox1)
         Me.Panel2.Controls.Add(Me.btnTeacher)
         Me.Panel2.Controls.Add(Me.btnSubject)
@@ -94,6 +94,20 @@ Partial Class Student
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(159, 354)
         Me.Panel2.TabIndex = 1
+        '
+        'btnGrade
+        '
+        Me.btnGrade.BackColor = System.Drawing.Color.LightGray
+        Me.btnGrade.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnGrade.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnGrade.Location = New System.Drawing.Point(41, 252)
+        Me.btnGrade.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnGrade.Name = "btnGrade"
+        Me.btnGrade.Size = New System.Drawing.Size(75, 34)
+        Me.btnGrade.TabIndex = 17
+        Me.btnGrade.Text = "Grade"
+        Me.btnGrade.UseMnemonic = False
+        Me.btnGrade.UseVisualStyleBackColor = False
         '
         'PictureBox5
         '
@@ -139,18 +153,6 @@ Partial Class Student
         Me.PictureBox2.TabIndex = 7
         Me.PictureBox2.TabStop = False
         '
-        'btnGrade
-        '
-        Me.btnGrade.AutoSize = True
-        Me.btnGrade.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnGrade.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnGrade.Location = New System.Drawing.Point(42, 260)
-        Me.btnGrade.Name = "btnGrade"
-        Me.btnGrade.Size = New System.Drawing.Size(54, 19)
-        Me.btnGrade.TabIndex = 6
-        Me.btnGrade.Text = "Grade"
-        Me.btnGrade.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
         'btnClass
         '
         Me.btnClass.AutoSize = True
@@ -162,18 +164,6 @@ Partial Class Student
         Me.btnClass.TabIndex = 5
         Me.btnClass.Text = "Class"
         Me.btnClass.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'btnStudents
-        '
-        Me.btnStudents.AutoSize = True
-        Me.btnStudents.Font = New System.Drawing.Font("Lato", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnStudents.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnStudents.Location = New System.Drawing.Point(42, 164)
-        Me.btnStudents.Name = "btnStudents"
-        Me.btnStudents.Size = New System.Drawing.Size(73, 19)
-        Me.btnStudents.TabIndex = 4
-        Me.btnStudents.Text = "Students"
-        Me.btnStudents.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'PictureBox1
         '
@@ -311,6 +301,20 @@ Partial Class Student
         Me.btnDelete.UseMnemonic = False
         Me.btnDelete.UseVisualStyleBackColor = False
         '
+        'btnStudent
+        '
+        Me.btnStudent.BackColor = System.Drawing.Color.LightGray
+        Me.btnStudent.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnStudent.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnStudent.Location = New System.Drawing.Point(41, 159)
+        Me.btnStudent.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnStudent.Name = "btnStudent"
+        Me.btnStudent.Size = New System.Drawing.Size(75, 34)
+        Me.btnStudent.TabIndex = 18
+        Me.btnStudent.Text = "Student"
+        Me.btnStudent.UseMnemonic = False
+        Me.btnStudent.UseVisualStyleBackColor = False
+        '
         'Student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -351,9 +355,7 @@ Partial Class Student
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents btnGrade As Label
     Friend WithEvents btnClass As Label
-    Friend WithEvents btnStudents As Label
     Friend WithEvents btnTeacher As Label
     Protected Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents colStudent As DataGridViewTextBoxColumn
@@ -363,4 +365,6 @@ Partial Class Student
     Friend WithEvents colBirthday As DataGridViewTextBoxColumn
     Friend WithEvents btnAddData As Button
     Friend WithEvents btnDelete As Button
+    Friend WithEvents btnGrade As Button
+    Friend WithEvents btnStudent As Button
 End Class

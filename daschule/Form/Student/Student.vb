@@ -40,7 +40,7 @@
 
     End Sub
 
-    Private Sub Label12_Click(sender As Object, e As EventArgs) Handles btnGrade.Click
+    Private Sub Label12_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -56,5 +56,14 @@
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Me.Hide()
         StudentDelete.Show()
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+
+    End Sub
+
+    Private Sub btnGrade_Click(sender As Object, e As EventArgs) Handles btnGrade.Click
+        Me.Hide()
+        Grade.Show()
     End Sub
 End Class
