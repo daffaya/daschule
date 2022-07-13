@@ -23,21 +23,21 @@ Partial Class StudentAddForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.txtStudentsID = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtStudentsName = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnEditData = New System.Windows.Forms.Button()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.btnEditData = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtStudentsName = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtStudentsID = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -65,71 +65,85 @@ Partial Class StudentAddForm
         Me.Panel1.Size = New System.Drawing.Size(536, 367)
         Me.Panel1.TabIndex = 0
         '
-        'txtStudentsID
+        'DateTimePicker1
         '
-        Me.txtStudentsID.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtStudentsID.Location = New System.Drawing.Point(237, 62)
-        Me.txtStudentsID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtStudentsID.Name = "txtStudentsID"
-        Me.txtStudentsID.Size = New System.Drawing.Size(205, 22)
-        Me.txtStudentsID.TabIndex = 1
+        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(237, 236)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(205, 23)
+        Me.DateTimePicker1.TabIndex = 19
         '
-        'Label3
+        'ComboBox2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(167, 14)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(227, 24)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Add Student Data Form"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.ComboBox2.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
+        Me.ComboBox2.Location = New System.Drawing.Point(237, 282)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(205, 23)
+        Me.ComboBox2.TabIndex = 18
         '
-        'Label1
+        'ComboBox1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(103, 65)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 16)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Students Id"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.ComboBox1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Male", "Female"})
+        Me.ComboBox1.Location = New System.Drawing.Point(237, 151)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(205, 23)
+        Me.ComboBox1.TabIndex = 17
         '
-        'Label2
+        'Button1
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(103, 109)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(112, 16)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Students Name"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(283, 334)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Cancel"
+        Me.Button1.UseMnemonic = False
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'txtStudentsName
+        'btnEditData
         '
-        Me.txtStudentsName.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtStudentsName.Location = New System.Drawing.Point(237, 106)
-        Me.txtStudentsName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtStudentsName.Name = "txtStudentsName"
-        Me.txtStudentsName.Size = New System.Drawing.Size(205, 22)
-        Me.txtStudentsName.TabIndex = 5
+        Me.btnEditData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnEditData.ForeColor = System.Drawing.Color.Black
+        Me.btnEditData.Location = New System.Drawing.Point(158, 334)
+        Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnEditData.Name = "btnEditData"
+        Me.btnEditData.Size = New System.Drawing.Size(75, 23)
+        Me.btnEditData.TabIndex = 15
+        Me.btnEditData.Text = "Save"
+        Me.btnEditData.UseMnemonic = False
+        Me.btnEditData.UseVisualStyleBackColor = False
         '
-        'Label4
+        'Label7
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(103, 153)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 16)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Gender"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(103, 286)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(46, 16)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "Class"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(103, 241)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(64, 16)
+        Me.Label6.TabIndex = 12
+        Me.Label6.Text = "Birthday"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label5
         '
@@ -152,85 +166,71 @@ Partial Class StudentAddForm
         Me.TextBox4.Size = New System.Drawing.Size(205, 22)
         Me.TextBox4.TabIndex = 9
         '
-        'Label6
+        'Label4
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(103, 241)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 16)
-        Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Birthday"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(103, 153)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(58, 16)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Gender"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'Label7
+        'Label2
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(103, 286)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 16)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Class"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(103, 109)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(112, 16)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Students Name"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'btnEditData
+        'txtStudentsName
         '
-        Me.btnEditData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnEditData.ForeColor = System.Drawing.Color.Black
-        Me.btnEditData.Location = New System.Drawing.Point(158, 334)
-        Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnEditData.Name = "btnEditData"
-        Me.btnEditData.Size = New System.Drawing.Size(75, 23)
-        Me.btnEditData.TabIndex = 15
-        Me.btnEditData.Text = "Save"
-        Me.btnEditData.UseMnemonic = False
-        Me.btnEditData.UseVisualStyleBackColor = False
+        Me.txtStudentsName.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtStudentsName.Location = New System.Drawing.Point(237, 106)
+        Me.txtStudentsName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStudentsName.Name = "txtStudentsName"
+        Me.txtStudentsName.Size = New System.Drawing.Size(205, 22)
+        Me.txtStudentsName.TabIndex = 5
         '
-        'Button1
+        'Label1
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(283, 334)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Cancel"
-        Me.Button1.UseMnemonic = False
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(103, 65)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(84, 16)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Students Id"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'ComboBox1
+        'Label3
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Male", "Female"})
-        Me.ComboBox1.Location = New System.Drawing.Point(237, 151)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(205, 23)
-        Me.ComboBox1.TabIndex = 17
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(167, 14)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(227, 24)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Add Student Data Form"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'ComboBox2
+        'txtStudentsID
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
-        Me.ComboBox2.Location = New System.Drawing.Point(237, 282)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(205, 23)
-        Me.ComboBox2.TabIndex = 18
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.DateTimePicker1.Location = New System.Drawing.Point(237, 236)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(205, 23)
-        Me.DateTimePicker1.TabIndex = 19
+        Me.txtStudentsID.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtStudentsID.Location = New System.Drawing.Point(237, 62)
+        Me.txtStudentsID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStudentsID.Name = "txtStudentsID"
+        Me.txtStudentsID.Size = New System.Drawing.Size(205, 22)
+        Me.txtStudentsID.TabIndex = 1
         '
         'StudentAddForm
         '

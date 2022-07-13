@@ -7,10 +7,6 @@
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
-
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles btnSubject.Click
 
     End Sub
@@ -24,7 +20,8 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEditData.Click
-
+        Me.Hide()
+        StudentEditData.Show()
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs)
@@ -49,5 +46,15 @@
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
+    End Sub
+
+    Private Sub btnAddData_Click(sender As Object, e As EventArgs) Handles btnAddData.Click
+        Me.Hide()
+        StudentAddForm.Show()
+    End Sub
+
+    Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
+        Me.Hide()
+        StudentDelete.Show()
     End Sub
 End Class
