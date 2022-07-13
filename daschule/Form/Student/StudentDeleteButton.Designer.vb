@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class GradeDeleteConfirm
+Partial Class StudentDeleteButton
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,10 +23,10 @@ Partial Class GradeDeleteConfirm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -36,28 +36,10 @@ Partial Class GradeDeleteConfirm
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Location = New System.Drawing.Point(292, 187)
+        Me.Panel1.Location = New System.Drawing.Point(283, 183)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(428, 208)
-        Me.Panel1.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 20)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Delete data"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(29, 61)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(330, 40)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "You are going to delete this data from database." & Global.Microsoft.VisualBasic.ChrW(10) & "Are you sure about this?"
+        Me.Panel1.TabIndex = 2
         '
         'Button4
         '
@@ -77,14 +59,32 @@ Partial Class GradeDeleteConfirm
         Me.Button3.Text = "Cancel"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'GradeDeleteConfirm
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(29, 61)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(330, 40)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "You are going to delete this data from database." & Global.Microsoft.VisualBasic.ChrW(10) & "Are you sure about this?"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(30, 20)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(87, 20)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Delete data"
+        '
+        'StudentDeleteButton
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1052, 771)
+        Me.ClientSize = New System.Drawing.Size(983, 682)
         Me.Controls.Add(Me.Panel1)
-        Me.Name = "GradeDeleteConfirm"
-        Me.Text = "GradeDeleteConfirm"
+        Me.Name = "StudentDeleteButton"
+        Me.Text = "StudentDeleteButton"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -92,8 +92,8 @@ Partial Class GradeDeleteConfirm
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Label2 As Label
 End Class
