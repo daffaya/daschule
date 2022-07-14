@@ -23,6 +23,7 @@ Partial Class GradeAddForm
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cmbSubject = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtGrade = New System.Windows.Forms.TextBox()
         Me.cmbClass = New System.Windows.Forms.ComboBox()
@@ -35,7 +36,6 @@ Partial Class GradeAddForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtStudentsID = New System.Windows.Forms.TextBox()
-        Me.cmbSubject = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -60,6 +60,16 @@ Partial Class GradeAddForm
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(536, 334)
         Me.Panel1.TabIndex = 4
+        '
+        'cmbSubject
+        '
+        Me.cmbSubject.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbSubject.FormattingEnabled = True
+        Me.cmbSubject.Items.AddRange(New Object() {"Pendidikan Agama", "PPKn", "Bahasa Indonesia", "Matematika", "Bahasa Inggris", "Seni Budaya", "Pendidikan Jasmani", "Sejarah", "", "Biologi", "Kimia", "Fisika", "Matematika Peminatan", "", "Ekonomi", "Sosiologi", "Geografi", "Sejarah Peminatan", "", "Sastra Indonesia", "Sastra Inggris", "Antropologi", "Bahasa Jerman", "", "Al-Quran Hadist", "Fiqih", "Akidah Akhlak", "Bahasa Arab"})
+        Me.cmbSubject.Location = New System.Drawing.Point(237, 107)
+        Me.cmbSubject.Name = "cmbSubject"
+        Me.cmbSubject.Size = New System.Drawing.Size(205, 23)
+        Me.cmbSubject.TabIndex = 21
         '
         'Label4
         '
@@ -197,16 +207,6 @@ Partial Class GradeAddForm
         Me.txtStudentsID.Name = "txtStudentsID"
         Me.txtStudentsID.Size = New System.Drawing.Size(205, 22)
         Me.txtStudentsID.TabIndex = 1
-        '
-        'cmbSubject
-        '
-        Me.cmbSubject.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cmbSubject.FormattingEnabled = True
-        Me.cmbSubject.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
-        Me.cmbSubject.Location = New System.Drawing.Point(237, 107)
-        Me.cmbSubject.Name = "cmbSubject"
-        Me.cmbSubject.Size = New System.Drawing.Size(205, 23)
-        Me.cmbSubject.TabIndex = 21
         '
         'GradeAddForm
         '
