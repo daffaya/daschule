@@ -26,4 +26,19 @@
         Me.Hide()
         Student.Show()
     End Sub
+
+    Private Sub btnSubject_Click(sender As Object, e As EventArgs) Handles btnSubject.Click
+        Me.Hide()
+        Subject.Show()
+    End Sub
+
+    Private Sub btnTeacher_Click(sender As Object, e As EventArgs) Handles btnTeacher.Click
+        Me.Hide()
+        Teacher.Show()
+    End Sub
+
+    Private Sub btnClass_Click(sender As Object, e As EventArgs) Handles btnClass.Click
+        Me.Hide()
+        Classroom.Show()
+    End Sub
 End Class

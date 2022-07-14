@@ -23,13 +23,13 @@ Partial Class GradeDelete
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtSubjectName = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEditData = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtStudentsID = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtSubjectName = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,6 +48,28 @@ Partial Class GradeDelete
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(487, 196)
         Me.Panel1.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(76, 100)
+        Me.Label2.Name = "Label2"
+        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.Label2.Size = New System.Drawing.Size(104, 16)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "Subject Name"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
+        'txtSubjectName
+        '
+        Me.txtSubjectName.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtSubjectName.Location = New System.Drawing.Point(210, 97)
+        Me.txtSubjectName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSubjectName.Name = "txtSubjectName"
+        Me.txtSubjectName.Size = New System.Drawing.Size(171, 22)
+        Me.txtSubjectName.TabIndex = 17
         '
         'Button1
         '
@@ -109,28 +131,6 @@ Partial Class GradeDelete
         Me.txtStudentsID.Name = "txtStudentsID"
         Me.txtStudentsID.Size = New System.Drawing.Size(171, 22)
         Me.txtStudentsID.TabIndex = 1
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(76, 100)
-        Me.Label2.Name = "Label2"
-        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label2.Size = New System.Drawing.Size(104, 16)
-        Me.Label2.TabIndex = 18
-        Me.Label2.Text = "Subject Name"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'txtSubjectName
-        '
-        Me.txtSubjectName.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtSubjectName.Location = New System.Drawing.Point(210, 97)
-        Me.txtSubjectName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtSubjectName.Name = "txtSubjectName"
-        Me.txtSubjectName.Size = New System.Drawing.Size(171, 22)
-        Me.txtSubjectName.TabIndex = 17
         '
         'GradeDelete
         '

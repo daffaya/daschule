@@ -25,33 +25,33 @@ Partial Class GradeEditForm
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtGrade = New System.Windows.Forms.TextBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmbClass = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEditData = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtKKM = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtStudentsName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtStudentsID = New System.Windows.Forms.TextBox()
+        Me.cmbSubject = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel1.Controls.Add(Me.cmbSubject)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.txtGrade)
-        Me.Panel1.Controls.Add(Me.ComboBox2)
+        Me.Panel1.Controls.Add(Me.cmbClass)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnEditData)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.txtKKM)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.txtStudentsName)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.txtStudentsID)
@@ -82,15 +82,15 @@ Partial Class GradeEditForm
         Me.txtGrade.Size = New System.Drawing.Size(205, 22)
         Me.txtGrade.TabIndex = 19
         '
-        'ComboBox2
+        'cmbClass
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
-        Me.ComboBox2.Location = New System.Drawing.Point(237, 151)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(205, 23)
-        Me.ComboBox2.TabIndex = 18
+        Me.cmbClass.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbClass.FormattingEnabled = True
+        Me.cmbClass.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
+        Me.cmbClass.Location = New System.Drawing.Point(237, 151)
+        Me.cmbClass.Name = "cmbClass"
+        Me.cmbClass.Size = New System.Drawing.Size(205, 23)
+        Me.cmbClass.TabIndex = 18
         '
         'Button1
         '
@@ -165,15 +165,6 @@ Partial Class GradeEditForm
         Me.Label2.Text = "Subject Name"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'txtStudentsName
-        '
-        Me.txtStudentsName.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtStudentsName.Location = New System.Drawing.Point(237, 106)
-        Me.txtStudentsName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtStudentsName.Name = "txtStudentsName"
-        Me.txtStudentsName.Size = New System.Drawing.Size(205, 22)
-        Me.txtStudentsName.TabIndex = 5
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -207,6 +198,16 @@ Partial Class GradeEditForm
         Me.txtStudentsID.Size = New System.Drawing.Size(205, 22)
         Me.txtStudentsID.TabIndex = 1
         '
+        'cmbSubject
+        '
+        Me.cmbSubject.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbSubject.FormattingEnabled = True
+        Me.cmbSubject.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
+        Me.cmbSubject.Location = New System.Drawing.Point(237, 107)
+        Me.cmbSubject.Name = "cmbSubject"
+        Me.cmbSubject.Size = New System.Drawing.Size(205, 23)
+        Me.cmbSubject.TabIndex = 21
+        '
         'GradeEditForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -224,15 +225,15 @@ Partial Class GradeEditForm
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label4 As Label
     Friend WithEvents txtGrade As TextBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmbClass As ComboBox
     Friend WithEvents Button1 As Button
     Friend WithEvents btnEditData As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txtKKM As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtStudentsName As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtStudentsID As TextBox
+    Friend WithEvents cmbSubject As ComboBox
 End Class

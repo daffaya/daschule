@@ -14,6 +14,6 @@
 
     Private Sub btnEditData_Click(sender As Object, e As EventArgs) Handles btnEditData.Click
         Me.Hide()
-        Student.Show()
+        StudentDeleteConfirm.Show()
     End Sub
 End Class

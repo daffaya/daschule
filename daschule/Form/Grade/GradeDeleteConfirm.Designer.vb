@@ -22,78 +22,96 @@ Partial Class GradeDeleteConfirm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Panel1.SuspendLayout()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnEditData = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'Button1
         '
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Location = New System.Drawing.Point(292, 187)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(428, 208)
-        Me.Panel1.TabIndex = 3
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.ForeColor = System.Drawing.Color.Black
+        Me.Button1.Location = New System.Drawing.Point(48, 110)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 16
+        Me.Button1.Text = "Cancel"
+        Me.Button1.UseMnemonic = False
+        Me.Button1.UseVisualStyleBackColor = False
         '
-        'Label2
+        'btnEditData
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 20)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 20)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Delete data"
+        Me.btnEditData.BackColor = System.Drawing.Color.DarkRed
+        Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnEditData.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnEditData.Location = New System.Drawing.Point(162, 110)
+        Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnEditData.Name = "btnEditData"
+        Me.btnEditData.Size = New System.Drawing.Size(75, 23)
+        Me.btnEditData.TabIndex = 15
+        Me.btnEditData.Text = "Delete"
+        Me.btnEditData.UseMnemonic = False
+        Me.btnEditData.UseVisualStyleBackColor = False
         '
-        'Label1
+        'Panel2
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(29, 61)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(330, 40)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "You are going to delete this data from database." & Global.Microsoft.VisualBasic.ChrW(10) & "Are you sure about this?"
+        Me.Panel2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel2.Controls.Add(Me.Label3)
+        Me.Panel2.Controls.Add(Me.Button1)
+        Me.Panel2.Controls.Add(Me.btnEditData)
+        Me.Panel2.Controls.Add(Me.Label5)
+        Me.Panel2.Location = New System.Drawing.Point(197, 82)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(392, 152)
+        Me.Panel2.TabIndex = 4
         '
-        'Button4
+        'Label3
         '
-        Me.Button4.Location = New System.Drawing.Point(253, 136)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(106, 29)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Delete"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(48, 59)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(267, 30)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "You are going to delete this data from database." & Global.Microsoft.VisualBasic.ChrW(10) & "Are you sure about this?"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'Button3
+        'Label5
         '
-        Me.Button3.Location = New System.Drawing.Point(141, 136)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(106, 29)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Cancel"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(48, 24)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(117, 24)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Delete Data"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'GradeDeleteConfirm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1052, 771)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(920, 562)
+        Me.Controls.Add(Me.Panel2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "GradeDeleteConfirm"
         Me.Text = "GradeDeleteConfirm"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnEditData As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label3 As Label
 End Class

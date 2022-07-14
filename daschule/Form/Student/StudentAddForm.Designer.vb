@@ -23,9 +23,9 @@ Partial Class StudentAddForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.dateBirthday = New System.Windows.Forms.DateTimePicker()
+        Me.cmbClass = New System.Windows.Forms.ComboBox()
+        Me.cmbGender = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEditData = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -44,9 +44,9 @@ Partial Class StudentAddForm
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Panel1.Controls.Add(Me.DateTimePicker1)
-        Me.Panel1.Controls.Add(Me.ComboBox2)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.dateBirthday)
+        Me.Panel1.Controls.Add(Me.cmbClass)
+        Me.Panel1.Controls.Add(Me.cmbGender)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnEditData)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -65,33 +65,33 @@ Partial Class StudentAddForm
         Me.Panel1.Size = New System.Drawing.Size(536, 367)
         Me.Panel1.TabIndex = 0
         '
-        'DateTimePicker1
+        'dateBirthday
         '
-        Me.DateTimePicker1.CalendarFont = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.DateTimePicker1.Location = New System.Drawing.Point(237, 236)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(205, 23)
-        Me.DateTimePicker1.TabIndex = 19
+        Me.dateBirthday.CalendarFont = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.dateBirthday.Location = New System.Drawing.Point(237, 236)
+        Me.dateBirthday.Name = "dateBirthday"
+        Me.dateBirthday.Size = New System.Drawing.Size(205, 23)
+        Me.dateBirthday.TabIndex = 19
         '
-        'ComboBox2
+        'cmbClass
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
-        Me.ComboBox2.Location = New System.Drawing.Point(237, 282)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(205, 23)
-        Me.ComboBox2.TabIndex = 18
+        Me.cmbClass.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbClass.FormattingEnabled = True
+        Me.cmbClass.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
+        Me.cmbClass.Location = New System.Drawing.Point(237, 282)
+        Me.cmbClass.Name = "cmbClass"
+        Me.cmbClass.Size = New System.Drawing.Size(205, 23)
+        Me.cmbClass.TabIndex = 18
         '
-        'ComboBox1
+        'cmbGender
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Male", "Female"})
-        Me.ComboBox1.Location = New System.Drawing.Point(237, 151)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(205, 23)
-        Me.ComboBox1.TabIndex = 17
+        Me.cmbGender.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbGender.FormattingEnabled = True
+        Me.cmbGender.Items.AddRange(New Object() {"Male", "Female"})
+        Me.cmbGender.Location = New System.Drawing.Point(237, 151)
+        Me.cmbGender.Name = "cmbGender"
+        Me.cmbGender.Size = New System.Drawing.Size(205, 23)
+        Me.cmbGender.TabIndex = 17
         '
         'Button1
         '
@@ -260,7 +260,7 @@ Partial Class StudentAddForm
     Friend WithEvents txtStudentsName As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents btnEditData As Button
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents dateBirthday As DateTimePicker
+    Friend WithEvents cmbClass As ComboBox
+    Friend WithEvents cmbGender As ComboBox
 End Class
