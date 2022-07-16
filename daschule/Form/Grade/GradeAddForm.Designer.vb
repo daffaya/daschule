@@ -119,6 +119,7 @@ Partial Class GradeAddForm
         'btnEditData
         '
         Me.btnEditData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnEditData.FlatAppearance.BorderSize = 0
         Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnEditData.ForeColor = System.Drawing.Color.Black
         Me.btnEditData.Location = New System.Drawing.Point(181, 298)

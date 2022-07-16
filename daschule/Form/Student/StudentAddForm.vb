@@ -25,11 +25,30 @@
     End Sub
 
     Private Sub btnEditData_Click(sender As Object, e As EventArgs) Handles btnEditData.Click
+        Try
+            koneksi.Open()
+            cmd = New SqlClient.SqlCommand()
+            With cmd
+                .Connection = koneksi
+                .CommandType = CommandType.StoredProcedure
+                .CommandText = "sp_InputDataSiswa"
+                .Parameters.AddWithValue("@id_siswa", txtStudentsID.Text)
+                .Parameters.AddWithValue("@nama", txtStudentsName.Text)
+                .Parameters.AddWithValue("@alamat", txtStudentsAddress.Text)
+                .Parameters.AddWithValue("@jenis_kelamin", cmbGender.Text)
+                .Parameters.AddWithValue("@tempat_lahir", txtStudentsBirthPlace.Text)
+                .Parameters.AddWithValue("@tanggal_lahir", dateBirthday.Text)
+                cmd.ExecuteNonQuery()
+            End With
+            koneksi.Close()
+            MsgBox("Data Has Been Saved", vbInformation)
+        Catch ex As Exception
+            koneksi.Close()
+            MsgBox(ex.Message, vbCritical)
+        End Try
+
         Me.Hide()
         Student.Show()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
 End Class

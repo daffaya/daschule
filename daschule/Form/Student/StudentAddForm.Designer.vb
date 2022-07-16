@@ -31,19 +31,23 @@ Partial Class StudentAddForm
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtStudentsBirthPlace = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtStudentsName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtStudentsID = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtStudentsAddress = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel1.Controls.Add(Me.Label8)
+        Me.Panel1.Controls.Add(Me.txtStudentsAddress)
         Me.Panel1.Controls.Add(Me.dateBirthday)
         Me.Panel1.Controls.Add(Me.cmbClass)
         Me.Panel1.Controls.Add(Me.cmbGender)
@@ -52,7 +56,7 @@ Partial Class StudentAddForm
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.TextBox4)
+        Me.Panel1.Controls.Add(Me.txtStudentsBirthPlace)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.txtStudentsName)
@@ -62,13 +66,13 @@ Partial Class StudentAddForm
         Me.Panel1.Location = New System.Drawing.Point(119, 25)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(536, 367)
+        Me.Panel1.Size = New System.Drawing.Size(536, 413)
         Me.Panel1.TabIndex = 0
         '
         'dateBirthday
         '
         Me.dateBirthday.CalendarFont = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.dateBirthday.Location = New System.Drawing.Point(237, 236)
+        Me.dateBirthday.Location = New System.Drawing.Point(237, 270)
         Me.dateBirthday.Name = "dateBirthday"
         Me.dateBirthday.Size = New System.Drawing.Size(205, 23)
         Me.dateBirthday.TabIndex = 19
@@ -78,7 +82,7 @@ Partial Class StudentAddForm
         Me.cmbClass.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cmbClass.FormattingEnabled = True
         Me.cmbClass.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
-        Me.cmbClass.Location = New System.Drawing.Point(237, 282)
+        Me.cmbClass.Location = New System.Drawing.Point(237, 316)
         Me.cmbClass.Name = "cmbClass"
         Me.cmbClass.Size = New System.Drawing.Size(205, 23)
         Me.cmbClass.TabIndex = 18
@@ -88,7 +92,7 @@ Partial Class StudentAddForm
         Me.cmbGender.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cmbGender.FormattingEnabled = True
         Me.cmbGender.Items.AddRange(New Object() {"Male", "Female"})
-        Me.cmbGender.Location = New System.Drawing.Point(237, 151)
+        Me.cmbGender.Location = New System.Drawing.Point(237, 185)
         Me.cmbGender.Name = "cmbGender"
         Me.cmbGender.Size = New System.Drawing.Size(205, 23)
         Me.cmbGender.TabIndex = 17
@@ -98,7 +102,7 @@ Partial Class StudentAddForm
         Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(283, 334)
+        Me.Button1.Location = New System.Drawing.Point(282, 370)
         Me.Button1.Margin = New System.Windows.Forms.Padding(0)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -112,7 +116,7 @@ Partial Class StudentAddForm
         Me.btnEditData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnEditData.ForeColor = System.Drawing.Color.Black
-        Me.btnEditData.Location = New System.Drawing.Point(158, 334)
+        Me.btnEditData.Location = New System.Drawing.Point(157, 370)
         Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
         Me.btnEditData.Name = "btnEditData"
         Me.btnEditData.Size = New System.Drawing.Size(75, 23)
@@ -126,7 +130,7 @@ Partial Class StudentAddForm
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(103, 286)
+        Me.Label7.Location = New System.Drawing.Point(103, 320)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(46, 16)
         Me.Label7.TabIndex = 14
@@ -138,7 +142,7 @@ Partial Class StudentAddForm
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(103, 241)
+        Me.Label6.Location = New System.Drawing.Point(103, 275)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(64, 16)
         Me.Label6.TabIndex = 12
@@ -150,28 +154,28 @@ Partial Class StudentAddForm
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(103, 195)
+        Me.Label5.Location = New System.Drawing.Point(103, 229)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(82, 16)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Birth Place"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'TextBox4
+        'txtStudentsBirthPlace
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.TextBox4.Location = New System.Drawing.Point(237, 192)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(205, 22)
-        Me.TextBox4.TabIndex = 9
+        Me.txtStudentsBirthPlace.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtStudentsBirthPlace.Location = New System.Drawing.Point(237, 226)
+        Me.txtStudentsBirthPlace.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStudentsBirthPlace.Name = "txtStudentsBirthPlace"
+        Me.txtStudentsBirthPlace.Size = New System.Drawing.Size(205, 22)
+        Me.txtStudentsBirthPlace.TabIndex = 9
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(103, 153)
+        Me.Label4.Location = New System.Drawing.Point(103, 187)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(58, 16)
         Me.Label4.TabIndex = 8
@@ -232,6 +236,27 @@ Partial Class StudentAddForm
         Me.txtStudentsID.Size = New System.Drawing.Size(205, 22)
         Me.txtStudentsID.TabIndex = 1
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(103, 147)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(65, 16)
+        Me.Label8.TabIndex = 21
+        Me.Label8.Text = "Address"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
+        'txtStudentsAddress
+        '
+        Me.txtStudentsAddress.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtStudentsAddress.Location = New System.Drawing.Point(237, 144)
+        Me.txtStudentsAddress.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStudentsAddress.Name = "txtStudentsAddress"
+        Me.txtStudentsAddress.Size = New System.Drawing.Size(205, 22)
+        Me.txtStudentsAddress.TabIndex = 20
+        '
         'StudentAddForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -254,7 +279,7 @@ Partial Class StudentAddForm
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtStudentsBirthPlace As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txtStudentsName As TextBox
@@ -263,4 +288,6 @@ Partial Class StudentAddForm
     Friend WithEvents dateBirthday As DateTimePicker
     Friend WithEvents cmbClass As ComboBox
     Friend WithEvents cmbGender As ComboBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtStudentsAddress As TextBox
 End Class

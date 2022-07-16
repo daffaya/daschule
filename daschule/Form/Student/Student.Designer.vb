@@ -26,8 +26,11 @@ Partial Class Student
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.btnTeacher = New System.Windows.Forms.Button()
         Me.btnStudent = New System.Windows.Forms.Button()
         Me.btnGrade = New System.Windows.Forms.Button()
+        Me.btnSubject = New System.Windows.Forms.Button()
+        Me.btnClass = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
@@ -43,9 +46,6 @@ Partial Class Student
         Me.colBirthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnAddData = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
-        Me.btnTeacher = New System.Windows.Forms.Button()
-        Me.btnSubject = New System.Windows.Forms.Button()
-        Me.btnClass = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,9 +60,10 @@ Partial Class Student
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(1, 0)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(799, 77)
+        Me.Panel1.Size = New System.Drawing.Size(859, 77)
         Me.Panel1.TabIndex = 0
         '
         'Label1
@@ -95,6 +96,20 @@ Partial Class Student
         Me.Panel2.Size = New System.Drawing.Size(159, 354)
         Me.Panel2.TabIndex = 1
         '
+        'btnTeacher
+        '
+        Me.btnTeacher.BackColor = System.Drawing.Color.LightGray
+        Me.btnTeacher.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnTeacher.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnTeacher.Location = New System.Drawing.Point(41, 104)
+        Me.btnTeacher.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnTeacher.Name = "btnTeacher"
+        Me.btnTeacher.Size = New System.Drawing.Size(75, 34)
+        Me.btnTeacher.TabIndex = 26
+        Me.btnTeacher.Text = "Teacher"
+        Me.btnTeacher.UseMnemonic = False
+        Me.btnTeacher.UseVisualStyleBackColor = False
+        '
         'btnStudent
         '
         Me.btnStudent.BackColor = System.Drawing.Color.LightGray
@@ -122,6 +137,34 @@ Partial Class Student
         Me.btnGrade.Text = "Grade"
         Me.btnGrade.UseMnemonic = False
         Me.btnGrade.UseVisualStyleBackColor = False
+        '
+        'btnSubject
+        '
+        Me.btnSubject.BackColor = System.Drawing.Color.LightGray
+        Me.btnSubject.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnSubject.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnSubject.Location = New System.Drawing.Point(41, 49)
+        Me.btnSubject.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnSubject.Name = "btnSubject"
+        Me.btnSubject.Size = New System.Drawing.Size(75, 34)
+        Me.btnSubject.TabIndex = 25
+        Me.btnSubject.Text = "Subject"
+        Me.btnSubject.UseMnemonic = False
+        Me.btnSubject.UseVisualStyleBackColor = False
+        '
+        'btnClass
+        '
+        Me.btnClass.BackColor = System.Drawing.Color.LightGray
+        Me.btnClass.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnClass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.btnClass.Location = New System.Drawing.Point(41, 205)
+        Me.btnClass.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnClass.Name = "btnClass"
+        Me.btnClass.Size = New System.Drawing.Size(75, 34)
+        Me.btnClass.TabIndex = 24
+        Me.btnClass.Text = "Class"
+        Me.btnClass.UseMnemonic = False
+        Me.btnClass.UseVisualStyleBackColor = False
         '
         'PictureBox5
         '
@@ -278,48 +321,6 @@ Partial Class Student
         Me.btnDelete.Text = "Delete"
         Me.btnDelete.UseMnemonic = False
         Me.btnDelete.UseVisualStyleBackColor = False
-        '
-        'btnTeacher
-        '
-        Me.btnTeacher.BackColor = System.Drawing.Color.LightGray
-        Me.btnTeacher.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnTeacher.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnTeacher.Location = New System.Drawing.Point(41, 104)
-        Me.btnTeacher.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnTeacher.Name = "btnTeacher"
-        Me.btnTeacher.Size = New System.Drawing.Size(75, 34)
-        Me.btnTeacher.TabIndex = 26
-        Me.btnTeacher.Text = "Teacher"
-        Me.btnTeacher.UseMnemonic = False
-        Me.btnTeacher.UseVisualStyleBackColor = False
-        '
-        'btnSubject
-        '
-        Me.btnSubject.BackColor = System.Drawing.Color.LightGray
-        Me.btnSubject.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnSubject.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnSubject.Location = New System.Drawing.Point(41, 49)
-        Me.btnSubject.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnSubject.Name = "btnSubject"
-        Me.btnSubject.Size = New System.Drawing.Size(75, 34)
-        Me.btnSubject.TabIndex = 25
-        Me.btnSubject.Text = "Subject"
-        Me.btnSubject.UseMnemonic = False
-        Me.btnSubject.UseVisualStyleBackColor = False
-        '
-        'btnClass
-        '
-        Me.btnClass.BackColor = System.Drawing.Color.LightGray
-        Me.btnClass.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnClass.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnClass.Location = New System.Drawing.Point(41, 205)
-        Me.btnClass.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnClass.Name = "btnClass"
-        Me.btnClass.Size = New System.Drawing.Size(75, 34)
-        Me.btnClass.TabIndex = 24
-        Me.btnClass.Text = "Class"
-        Me.btnClass.UseMnemonic = False
-        Me.btnClass.UseVisualStyleBackColor = False
         '
         'Student
         '
