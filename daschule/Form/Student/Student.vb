@@ -1,4 +1,6 @@
-﻿Public Class Student
+﻿Imports System.Data.SqlClient
+
+Public Class Student
     Private Sub Student_Load(sender As Object, e As EventArgs)
 
     End Sub
@@ -18,10 +20,6 @@
 
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGSiswa.CellContentClick
 
     End Sub
 
@@ -57,5 +55,22 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnSubject.Click
         Me.Hide()
         Subject.Show()
+    End Sub
+
+    Private Sub DGSiswa_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGSiswa.CellContentClick
+        sql = "Data Source=Kumamakura;Initial Catalog=daschule;Integrated Security=True"
+        koneksi = New SqlClient.SqlConnection(sql)
+        koneksi.Open()
+
+        cmd = New SqlClient.SqlCommand("SELECT id_siswa, nama, jenis_kelamin, tempat_lahir, tanggal_lahir FROM vAllStudent", koneksi)
+        adaptor = New SqlDataAdapter
+        adaptor.SelectCommand = cmd
+
+        ass = New DataTable
+        ass.Clear()
+        adaptor.Fill(ass)
+        DGSiswa.DataSource = ass
+
+        koneksi.Close()
     End Sub
 End Class

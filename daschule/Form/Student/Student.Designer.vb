@@ -249,9 +249,10 @@ Partial Class Student
         '
         'DGSiswa
         '
+        Me.DGSiswa.AllowUserToOrderColumns = True
         Me.DGSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DGSiswa.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colStudent, Me.colStudentId, Me.colGender, Me.colBirthPlace, Me.colBirthday})
-        Me.DGSiswa.Location = New System.Drawing.Point(176, 142)
+        Me.DGSiswa.Location = New System.Drawing.Point(176, 133)
         Me.DGSiswa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DGSiswa.Name = "DGSiswa"
         Me.DGSiswa.RowHeadersWidth = 51
@@ -355,7 +356,6 @@ Partial Class Student
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents btnEditData As Button
-    Friend WithEvents DGSiswa As DataGridView
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
@@ -373,4 +373,5 @@ Partial Class Student
     Friend WithEvents btnTeacher As Button
     Friend WithEvents btnSubject As Button
     Friend WithEvents btnClass As Button
+    Friend WithEvents DGSiswa As DataGridView
 End Class

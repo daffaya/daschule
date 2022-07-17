@@ -23,6 +23,8 @@ Partial Class StudentEditData
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtStudentsAddress = New System.Windows.Forms.TextBox()
         Me.dateBirthday = New System.Windows.Forms.DateTimePicker()
         Me.cmbClass = New System.Windows.Forms.ComboBox()
         Me.cmbGender = New System.Windows.Forms.ComboBox()
@@ -38,8 +40,6 @@ Partial Class StudentEditData
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtStudentsID = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtStudentsAddress = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,6 +68,27 @@ Partial Class StudentEditData
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(536, 410)
         Me.Panel1.TabIndex = 1
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(103, 148)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(65, 16)
+        Me.Label8.TabIndex = 23
+        Me.Label8.Text = "Address"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
+        'txtStudentsAddress
+        '
+        Me.txtStudentsAddress.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtStudentsAddress.Location = New System.Drawing.Point(237, 145)
+        Me.txtStudentsAddress.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStudentsAddress.Name = "txtStudentsAddress"
+        Me.txtStudentsAddress.Size = New System.Drawing.Size(205, 22)
+        Me.txtStudentsAddress.TabIndex = 22
         '
         'dateBirthday
         '
@@ -235,27 +256,6 @@ Partial Class StudentEditData
         Me.txtStudentsID.Name = "txtStudentsID"
         Me.txtStudentsID.Size = New System.Drawing.Size(205, 22)
         Me.txtStudentsID.TabIndex = 1
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(103, 148)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 16)
-        Me.Label8.TabIndex = 23
-        Me.Label8.Text = "Address"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'txtStudentsAddress
-        '
-        Me.txtStudentsAddress.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtStudentsAddress.Location = New System.Drawing.Point(237, 145)
-        Me.txtStudentsAddress.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtStudentsAddress.Name = "txtStudentsAddress"
-        Me.txtStudentsAddress.Size = New System.Drawing.Size(205, 22)
-        Me.txtStudentsAddress.TabIndex = 22
         '
         'StudentEditData
         '

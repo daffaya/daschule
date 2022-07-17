@@ -23,10 +23,12 @@ Partial Class StudentAddForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtStudentsAddress = New System.Windows.Forms.TextBox()
         Me.dateBirthday = New System.Windows.Forms.DateTimePicker()
         Me.cmbClass = New System.Windows.Forms.ComboBox()
         Me.cmbGender = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btncancel = New System.Windows.Forms.Button()
         Me.btnEditData = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -38,8 +40,6 @@ Partial Class StudentAddForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtStudentsID = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtStudentsAddress = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -51,7 +51,7 @@ Partial Class StudentAddForm
         Me.Panel1.Controls.Add(Me.dateBirthday)
         Me.Panel1.Controls.Add(Me.cmbClass)
         Me.Panel1.Controls.Add(Me.cmbGender)
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.btncancel)
         Me.Panel1.Controls.Add(Me.btnEditData)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label6)
@@ -68,6 +68,27 @@ Partial Class StudentAddForm
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(536, 413)
         Me.Panel1.TabIndex = 0
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.Label8.Location = New System.Drawing.Point(103, 147)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(65, 16)
+        Me.Label8.TabIndex = 21
+        Me.Label8.Text = "Address"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.BottomRight
+        '
+        'txtStudentsAddress
+        '
+        Me.txtStudentsAddress.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtStudentsAddress.Location = New System.Drawing.Point(237, 144)
+        Me.txtStudentsAddress.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtStudentsAddress.Name = "txtStudentsAddress"
+        Me.txtStudentsAddress.Size = New System.Drawing.Size(205, 22)
+        Me.txtStudentsAddress.TabIndex = 20
         '
         'dateBirthday
         '
@@ -91,25 +112,25 @@ Partial Class StudentAddForm
         '
         Me.cmbGender.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cmbGender.FormattingEnabled = True
-        Me.cmbGender.Items.AddRange(New Object() {"Male", "Female"})
+        Me.cmbGender.Items.AddRange(New Object() {"Laki-Laki", "Perempuan"})
         Me.cmbGender.Location = New System.Drawing.Point(237, 185)
         Me.cmbGender.Name = "cmbGender"
         Me.cmbGender.Size = New System.Drawing.Size(205, 23)
         Me.cmbGender.TabIndex = 17
         '
-        'Button1
+        'btncancel
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(282, 370)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Cancel"
-        Me.Button1.UseMnemonic = False
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btncancel.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btncancel.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btncancel.ForeColor = System.Drawing.Color.Black
+        Me.btncancel.Location = New System.Drawing.Point(282, 370)
+        Me.btncancel.Margin = New System.Windows.Forms.Padding(0)
+        Me.btncancel.Name = "btncancel"
+        Me.btncancel.Size = New System.Drawing.Size(75, 23)
+        Me.btncancel.TabIndex = 16
+        Me.btncancel.Text = "Cancel"
+        Me.btncancel.UseMnemonic = False
+        Me.btncancel.UseVisualStyleBackColor = False
         '
         'btnEditData
         '
@@ -236,27 +257,6 @@ Partial Class StudentAddForm
         Me.txtStudentsID.Size = New System.Drawing.Size(205, 22)
         Me.txtStudentsID.TabIndex = 1
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(103, 147)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 16)
-        Me.Label8.TabIndex = 21
-        Me.Label8.Text = "Address"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'txtStudentsAddress
-        '
-        Me.txtStudentsAddress.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtStudentsAddress.Location = New System.Drawing.Point(237, 144)
-        Me.txtStudentsAddress.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtStudentsAddress.Name = "txtStudentsAddress"
-        Me.txtStudentsAddress.Size = New System.Drawing.Size(205, 22)
-        Me.txtStudentsAddress.TabIndex = 20
-        '
         'StudentAddForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -283,7 +283,7 @@ Partial Class StudentAddForm
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txtStudentsName As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btncancel As Button
     Friend WithEvents btnEditData As Button
     Friend WithEvents dateBirthday As DateTimePicker
     Friend WithEvents cmbClass As ComboBox
