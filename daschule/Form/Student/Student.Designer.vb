@@ -39,11 +39,6 @@ Partial Class Student
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnEditData = New System.Windows.Forms.Button()
         Me.DGSiswa = New System.Windows.Forms.DataGridView()
-        Me.colStudent = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colStudentId = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colGender = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colBirthPlace = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colBirthday = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btnAddData = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
@@ -251,7 +246,6 @@ Partial Class Student
         '
         Me.DGSiswa.AllowUserToOrderColumns = True
         Me.DGSiswa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGSiswa.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colStudent, Me.colStudentId, Me.colGender, Me.colBirthPlace, Me.colBirthday})
         Me.DGSiswa.Location = New System.Drawing.Point(176, 133)
         Me.DGSiswa.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DGSiswa.Name = "DGSiswa"
@@ -259,41 +253,6 @@ Partial Class Student
         Me.DGSiswa.RowTemplate.Height = 29
         Me.DGSiswa.Size = New System.Drawing.Size(612, 262)
         Me.DGSiswa.TabIndex = 8
-        '
-        'colStudent
-        '
-        Me.colStudent.HeaderText = "Student Name"
-        Me.colStudent.MinimumWidth = 6
-        Me.colStudent.Name = "colStudent"
-        Me.colStudent.Width = 125
-        '
-        'colStudentId
-        '
-        Me.colStudentId.HeaderText = "Student Id"
-        Me.colStudentId.MinimumWidth = 6
-        Me.colStudentId.Name = "colStudentId"
-        Me.colStudentId.Width = 72
-        '
-        'colGender
-        '
-        Me.colGender.HeaderText = "Gender"
-        Me.colGender.MinimumWidth = 6
-        Me.colGender.Name = "colGender"
-        Me.colGender.Width = 125
-        '
-        'colBirthPlace
-        '
-        Me.colBirthPlace.HeaderText = "Birth Place"
-        Me.colBirthPlace.MinimumWidth = 6
-        Me.colBirthPlace.Name = "colBirthPlace"
-        Me.colBirthPlace.Width = 125
-        '
-        'colBirthday
-        '
-        Me.colBirthday.HeaderText = "Birthday"
-        Me.colBirthday.MinimumWidth = 6
-        Me.colBirthday.Name = "colBirthday"
-        Me.colBirthday.Width = 125
         '
         'btnAddData
         '
@@ -361,11 +320,6 @@ Partial Class Student
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Protected Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents colStudent As DataGridViewTextBoxColumn
-    Friend WithEvents colStudentId As DataGridViewTextBoxColumn
-    Friend WithEvents colGender As DataGridViewTextBoxColumn
-    Friend WithEvents colBirthPlace As DataGridViewTextBoxColumn
-    Friend WithEvents colBirthday As DataGridViewTextBoxColumn
     Friend WithEvents btnAddData As Button
     Friend WithEvents btnDelete As Button
     Friend WithEvents btnGrade As Button

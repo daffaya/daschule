@@ -23,8 +23,8 @@ Partial Class StudentDelete
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnEditData = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnDeleteData = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtStudentsID = New System.Windows.Forms.TextBox()
@@ -34,8 +34,8 @@ Partial Class StudentDelete
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btnEditData)
+        Me.Panel1.Controls.Add(Me.btnCancel)
+        Me.Panel1.Controls.Add(Me.btnDeleteData)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.txtStudentsID)
@@ -45,33 +45,33 @@ Partial Class StudentDelete
         Me.Panel1.Size = New System.Drawing.Size(536, 155)
         Me.Panel1.TabIndex = 2
         '
-        'Button1
+        'btnCancel
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(173, 109)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Cancel"
-        Me.Button1.UseMnemonic = False
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnCancel.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btnCancel.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnCancel.ForeColor = System.Drawing.Color.Black
+        Me.btnCancel.Location = New System.Drawing.Point(173, 109)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 16
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseMnemonic = False
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
-        'btnEditData
+        'btnDeleteData
         '
-        Me.btnEditData.BackColor = System.Drawing.Color.DarkRed
-        Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnEditData.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnEditData.Location = New System.Drawing.Point(274, 109)
-        Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnEditData.Name = "btnEditData"
-        Me.btnEditData.Size = New System.Drawing.Size(75, 23)
-        Me.btnEditData.TabIndex = 15
-        Me.btnEditData.Text = "Delete"
-        Me.btnEditData.UseMnemonic = False
-        Me.btnEditData.UseVisualStyleBackColor = False
+        Me.btnDeleteData.BackColor = System.Drawing.Color.DarkRed
+        Me.btnDeleteData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnDeleteData.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.btnDeleteData.Location = New System.Drawing.Point(274, 109)
+        Me.btnDeleteData.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnDeleteData.Name = "btnDeleteData"
+        Me.btnDeleteData.Size = New System.Drawing.Size(75, 23)
+        Me.btnDeleteData.TabIndex = 15
+        Me.btnDeleteData.Text = "Delete"
+        Me.btnDeleteData.UseMnemonic = False
+        Me.btnDeleteData.UseVisualStyleBackColor = False
         '
         'Label1
         '
@@ -121,8 +121,8 @@ Partial Class StudentDelete
     End Sub
 
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
-    Friend WithEvents btnEditData As Button
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents btnDeleteData As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtStudentsID As TextBox

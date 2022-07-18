@@ -27,8 +27,8 @@ Partial Class GradeEditForm
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtGrade = New System.Windows.Forms.TextBox()
         Me.cmbClass = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnEditData = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnSaveData = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtKKM = New System.Windows.Forms.TextBox()
@@ -46,8 +46,8 @@ Partial Class GradeEditForm
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.txtGrade)
         Me.Panel1.Controls.Add(Me.cmbClass)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btnEditData)
+        Me.Panel1.Controls.Add(Me.btnCancel)
+        Me.Panel1.Controls.Add(Me.btnSaveData)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.txtKKM)
@@ -102,33 +102,33 @@ Partial Class GradeEditForm
         Me.cmbClass.Size = New System.Drawing.Size(205, 23)
         Me.cmbClass.TabIndex = 18
         '
-        'Button1
+        'btnCancel
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(306, 298)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Cancel"
-        Me.Button1.UseMnemonic = False
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnCancel.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btnCancel.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnCancel.ForeColor = System.Drawing.Color.Black
+        Me.btnCancel.Location = New System.Drawing.Point(306, 298)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 16
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseMnemonic = False
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
-        'btnEditData
+        'btnSaveData
         '
-        Me.btnEditData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnEditData.ForeColor = System.Drawing.Color.Black
-        Me.btnEditData.Location = New System.Drawing.Point(181, 298)
-        Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnEditData.Name = "btnEditData"
-        Me.btnEditData.Size = New System.Drawing.Size(75, 23)
-        Me.btnEditData.TabIndex = 15
-        Me.btnEditData.Text = "Save"
-        Me.btnEditData.UseMnemonic = False
-        Me.btnEditData.UseVisualStyleBackColor = False
+        Me.btnSaveData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSaveData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnSaveData.ForeColor = System.Drawing.Color.Black
+        Me.btnSaveData.Location = New System.Drawing.Point(181, 298)
+        Me.btnSaveData.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnSaveData.Name = "btnSaveData"
+        Me.btnSaveData.Size = New System.Drawing.Size(75, 23)
+        Me.btnSaveData.TabIndex = 15
+        Me.btnSaveData.Text = "Save"
+        Me.btnSaveData.UseMnemonic = False
+        Me.btnSaveData.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -226,8 +226,8 @@ Partial Class GradeEditForm
     Friend WithEvents Label4 As Label
     Friend WithEvents txtGrade As TextBox
     Friend WithEvents cmbClass As ComboBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents btnEditData As Button
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents btnSaveData As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txtKKM As TextBox

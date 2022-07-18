@@ -1,4 +1,5 @@
-﻿Public Class Subject
+﻿Imports System.Data.SqlClient
+Public Class Subject
     Private Sub btnTeacher_Click(sender As Object, e As EventArgs) Handles btnTeacher.Click
         Me.Hide()
         Teacher.Show()
@@ -19,4 +20,25 @@
         Me.Hide()
         Grade.Show()
     End Sub
+
+    Private Sub Subject_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadSubject()
+    End Sub
+
+
+    Public Sub LoadSubject()
+        koneksi.Open()
+        DGSiswa.Update()
+        DGSiswa.Refresh()
+        Dim Sql As String = "SELECT * FROM vAllSubject"
+        Dim adaptor As New SqlDataAdapter(Sql, koneksi)
+        Dim data As New DataSet()
+
+        adaptor.Fill(data, "vAllSubject")
+        DGSiswa.DataSource = data
+        DGSiswa.DataMember = "vAllSubject"
+
+        koneksi.Close()
+    End Sub
+
 End Class

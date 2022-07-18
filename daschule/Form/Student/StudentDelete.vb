@@ -1,19 +1,40 @@
-﻿Public Class StudentDelete
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+﻿Imports System.Data.SqlClient
 
-    End Sub
+Public Class StudentDelete
+    Dim LoadStudents As New Student
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) 
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Dim sql As String = "Data Source=Kumamakura;Initial Catalog=daschule;Integrated Security=True"
+    Dim koneksi As New SqlConnection(sql)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
         Me.Hide()
         Student.Show()
     End Sub
 
-    Private Sub btnEditData_Click(sender As Object, e As EventArgs) Handles btnEditData.Click
+    Private Sub btnEditData_Click(sender As Object, e As EventArgs) Handles btnDeleteData.Click
+        koneksi.Open()
+
+        Dim command As SqlCommand = New SqlCommand("spDeleteDataSiswa", koneksi)
+        command.CommandType = CommandType.StoredProcedure
+        command.Parameters.AddWithValue("@id_siswa", SqlDbType.VarChar).Value = txtStudentsID.Text.Trim()
+
+        command.ExecuteNonQuery()
+
+        MessageBox.Show("Data has been deleted!")
+
+
+        koneksi.Close()
+
         Me.Hide()
-        StudentDeleteConfirm.Show()
+        Student.Hide()
+        LoadStudents.LoadStudent()
+        LoadStudents.Show()
+
     End Sub
+
+    Private Sub StudentDelete_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+    End Sub
+
+
 End Class

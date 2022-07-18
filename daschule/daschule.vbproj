@@ -38,7 +38,6 @@
     <Folder Include="My Project\NewFolder1\" />
     <Folder Include="My Project\NewFolder2\" />
     <Folder Include="My Project\NewFolder\" />
-    <Folder Include="Entity\" />
     <Folder Include="Control\" />
     <Folder Include="Global\" />
   </ItemGroup>

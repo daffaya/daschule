@@ -1,40 +1,23 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Student
-    Private Sub Student_Load(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
-
-    Private Sub Student_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
+    Dim sql As String = "Data Source=Kumamakura;Initial Catalog=daschule;Integrated Security=True"
+    Dim koneksi As New SqlConnection(sql)
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnEditData.Click
         Me.Hide()
         StudentEditData.Show()
     End Sub
 
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
     Private Sub btnAddData_Click(sender As Object, e As EventArgs) Handles btnAddData.Click
-        Me.Hide()
+        Dim tambah As New StudentAddForm()
         StudentAddForm.Show()
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
         Me.Hide()
         StudentDelete.Show()
-    End Sub
-
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-
     End Sub
 
     Private Sub btnGrade_Click(sender As Object, e As EventArgs) Handles btnGrade.Click
@@ -57,20 +40,26 @@ Public Class Student
         Subject.Show()
     End Sub
 
-    Private Sub DGSiswa_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGSiswa.CellContentClick
-        sql = "Data Source=Kumamakura;Initial Catalog=daschule;Integrated Security=True"
-        koneksi = New SqlClient.SqlConnection(sql)
+    Public Sub Student_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadStudent()
+    End Sub
+
+    Public Sub LoadStudent()
         koneksi.Open()
+        DGSiswa.Update()
+        DGSiswa.Refresh()
+        Dim Sql As String = "SELECT * FROM vAllStudent"
+        Dim adaptor As New SqlDataAdapter(Sql, koneksi)
+        Dim data As New DataSet()
 
-        cmd = New SqlClient.SqlCommand("SELECT id_siswa, nama, jenis_kelamin, tempat_lahir, tanggal_lahir FROM vAllStudent", koneksi)
-        adaptor = New SqlDataAdapter
-        adaptor.SelectCommand = cmd
-
-        ass = New DataTable
-        ass.Clear()
-        adaptor.Fill(ass)
-        DGSiswa.DataSource = ass
+        adaptor.Fill(data, "vAllStudent")
+        DGSiswa.DataSource = data
+        DGSiswa.DataMember = "vAllStudent"
 
         koneksi.Close()
+    End Sub
+
+    Public Sub Student_Load()
+        LoadStudent()
     End Sub
 End Class

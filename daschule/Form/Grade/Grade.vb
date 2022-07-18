@@ -1,4 +1,6 @@
-﻿Public Class Grade
+﻿Imports System.Data.SqlClient
+
+Public Class Grade
     Private Sub DGSiswa_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGSiswa.CellContentClick
 
     End Sub
@@ -42,4 +44,27 @@
         Classroom.Show()
     End Sub
 
+    Private Sub Grade_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadGrade()
+    End Sub
+
+
+    Public Sub LoadGrade()
+        koneksi.Open()
+        DGSiswa.Update()
+        DGSiswa.Refresh()
+        Dim Sql As String = "SELECT * FROM vAllGrade"
+        Dim adaptor As New SqlDataAdapter(Sql, koneksi)
+        Dim data As New DataSet()
+
+        adaptor.Fill(data, "vAllGrade")
+        DGSiswa.DataSource = data
+        DGSiswa.DataMember = "vAllGrade"
+
+        koneksi.Close()
+    End Sub
+
+    Public Sub Student_Load()
+        LoadGrade()
+    End Sub
 End Class

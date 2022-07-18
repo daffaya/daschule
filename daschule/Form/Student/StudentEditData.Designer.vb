@@ -112,7 +112,7 @@ Partial Class StudentEditData
         '
         Me.cmbGender.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cmbGender.FormattingEnabled = True
-        Me.cmbGender.Items.AddRange(New Object() {"Male", "Female"})
+        Me.cmbGender.Items.AddRange(New Object() {"Laki-Laki", "Perempuan"})
         Me.cmbGender.Location = New System.Drawing.Point(237, 184)
         Me.cmbGender.Name = "cmbGender"
         Me.cmbGender.Size = New System.Drawing.Size(205, 23)

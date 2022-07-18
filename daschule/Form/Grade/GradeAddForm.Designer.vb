@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class GradeAddForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,15 @@ Partial Class GradeAddForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.cmbSubject = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtGrade = New System.Windows.Forms.TextBox()
         Me.cmbClass = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnEditData = New System.Windows.Forms.Button()
+        Me.btnCancel = New System.Windows.Forms.Button()
+        Me.btnSaveData = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtKKM = New System.Windows.Forms.TextBox()
@@ -46,8 +46,8 @@ Partial Class GradeAddForm
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.txtGrade)
         Me.Panel1.Controls.Add(Me.cmbClass)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.btnEditData)
+        Me.Panel1.Controls.Add(Me.btnCancel)
+        Me.Panel1.Controls.Add(Me.btnSaveData)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Controls.Add(Me.txtKKM)
@@ -102,34 +102,33 @@ Partial Class GradeAddForm
         Me.cmbClass.Size = New System.Drawing.Size(205, 23)
         Me.cmbClass.TabIndex = 18
         '
-        'Button1
+        'btnCancel
         '
-        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Button1.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(306, 298)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Cancel"
-        Me.Button1.UseMnemonic = False
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnCancel.BackColor = System.Drawing.SystemColors.ButtonShadow
+        Me.btnCancel.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnCancel.ForeColor = System.Drawing.Color.Black
+        Me.btnCancel.Location = New System.Drawing.Point(306, 298)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnCancel.Name = "btnCancel"
+        Me.btnCancel.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancel.TabIndex = 16
+        Me.btnCancel.Text = "Cancel"
+        Me.btnCancel.UseMnemonic = False
+        Me.btnCancel.UseVisualStyleBackColor = False
         '
-        'btnEditData
+        'btnSaveData
         '
-        Me.btnEditData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
-        Me.btnEditData.FlatAppearance.BorderSize = 0
-        Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnEditData.ForeColor = System.Drawing.Color.Black
-        Me.btnEditData.Location = New System.Drawing.Point(181, 298)
-        Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnEditData.Name = "btnEditData"
-        Me.btnEditData.Size = New System.Drawing.Size(75, 23)
-        Me.btnEditData.TabIndex = 15
-        Me.btnEditData.Text = "Save"
-        Me.btnEditData.UseMnemonic = False
-        Me.btnEditData.UseVisualStyleBackColor = False
+        Me.btnSaveData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
+        Me.btnSaveData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btnSaveData.ForeColor = System.Drawing.Color.Black
+        Me.btnSaveData.Location = New System.Drawing.Point(181, 298)
+        Me.btnSaveData.Margin = New System.Windows.Forms.Padding(0)
+        Me.btnSaveData.Name = "btnSaveData"
+        Me.btnSaveData.Size = New System.Drawing.Size(75, 23)
+        Me.btnSaveData.TabIndex = 15
+        Me.btnSaveData.Text = "Save"
+        Me.btnSaveData.UseMnemonic = False
+        Me.btnSaveData.UseVisualStyleBackColor = False
         '
         'Label7
         '
@@ -216,7 +215,7 @@ Partial Class GradeAddForm
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "GradeAddForm"
-        Me.Text = "GradeAdd"
+        Me.Text = "GradeAddForm"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
@@ -224,11 +223,12 @@ Partial Class GradeAddForm
     End Sub
 
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents cmbSubject As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtGrade As TextBox
     Friend WithEvents cmbClass As ComboBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents btnEditData As Button
+    Friend WithEvents btnCancel As Button
+    Friend WithEvents btnSaveData As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents txtKKM As TextBox
@@ -236,5 +236,4 @@ Partial Class GradeAddForm
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtStudentsID As TextBox
-    Friend WithEvents cmbSubject As ComboBox
 End Class
