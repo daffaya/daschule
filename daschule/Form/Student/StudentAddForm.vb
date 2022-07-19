@@ -1,7 +1,9 @@
-﻿
+﻿Imports System.Data.SqlClient
 
 Public Class StudentAddForm
     Dim LoadStudents As New Student
+    Dim sql As String = "Data Source=Kumamakura;Initial Catalog=daschule;Integrated Security=True"
+    Dim koneksi As New SqlConnection(sql)
     Public Sub ClearStudent()
         txtStudentsID.Clear()
         txtStudentsName.Clear()
@@ -50,4 +52,7 @@ Public Class StudentAddForm
         End Try
     End Sub
 
+    Private Sub StudentAddForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

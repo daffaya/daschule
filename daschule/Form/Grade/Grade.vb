@@ -1,14 +1,8 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Grade
-    Private Sub DGSiswa_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGSiswa.CellContentClick
-
-    End Sub
-
-    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-
-    End Sub
-
+    Dim sql As String = "Data Source=Kumamakura;Initial Catalog=daschule;Integrated Security=True"
+    Dim koneksi As New SqlConnection(sql)
     Private Sub btnAddData_Click(sender As Object, e As EventArgs) Handles btnAddData.Click
         Me.Hide()
         GradeAddForm.Show()

@@ -1,5 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class Subject
+    Dim sql As String = "Data Source=Kumamakura;Initial Catalog=daschule;Integrated Security=True"
+    Dim koneksi As New SqlConnection(sql)
     Private Sub btnTeacher_Click(sender As Object, e As EventArgs) Handles btnTeacher.Click
         Me.Hide()
         Teacher.Show()

@@ -1,4 +1,5 @@
-﻿Public Class StudentEditData
+﻿Imports System.Data.SqlClient
+Public Class StudentEditData
     Dim LoadStudents As New Student
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Hide()
@@ -51,7 +52,4 @@
         Student.Show()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
-
-    End Sub
 End Class
