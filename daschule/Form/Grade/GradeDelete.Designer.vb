@@ -24,7 +24,7 @@ Partial Class GradeDelete
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtSubjectName = New System.Windows.Forms.TextBox()
+        Me.txtSubjectID = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEditData = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -37,7 +37,7 @@ Partial Class GradeDelete
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.ControlLight
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.txtSubjectName)
+        Me.Panel1.Controls.Add(Me.txtSubjectID)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.btnEditData)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -57,19 +57,19 @@ Partial Class GradeDelete
         Me.Label2.Location = New System.Drawing.Point(76, 100)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.Label2.Size = New System.Drawing.Size(104, 16)
+        Me.Label2.Size = New System.Drawing.Size(76, 16)
         Me.Label2.TabIndex = 18
-        Me.Label2.Text = "Subject Name"
+        Me.Label2.Text = "Subject Id"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
-        'txtSubjectName
+        'txtSubjectID
         '
-        Me.txtSubjectName.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtSubjectName.Location = New System.Drawing.Point(210, 97)
-        Me.txtSubjectName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtSubjectName.Name = "txtSubjectName"
-        Me.txtSubjectName.Size = New System.Drawing.Size(171, 22)
-        Me.txtSubjectName.TabIndex = 17
+        Me.txtSubjectID.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtSubjectID.Location = New System.Drawing.Point(210, 97)
+        Me.txtSubjectID.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txtSubjectID.Name = "txtSubjectID"
+        Me.txtSubjectID.Size = New System.Drawing.Size(171, 22)
+        Me.txtSubjectID.TabIndex = 17
         '
         'Button1
         '
@@ -148,7 +148,7 @@ Partial Class GradeDelete
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtSubjectName As TextBox
+    Friend WithEvents txtSubjectID As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents btnEditData As Button
     Friend WithEvents Label1 As Label

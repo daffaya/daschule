@@ -233,7 +233,7 @@ Partial Class Student
         Me.btnEditData.BackColor = System.Drawing.Color.LightGray
         Me.btnEditData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnEditData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnEditData.Location = New System.Drawing.Point(626, 96)
+        Me.btnEditData.Location = New System.Drawing.Point(669, 96)
         Me.btnEditData.Margin = New System.Windows.Forms.Padding(0)
         Me.btnEditData.Name = "btnEditData"
         Me.btnEditData.Size = New System.Drawing.Size(75, 23)
@@ -251,7 +251,7 @@ Partial Class Student
         Me.DGSiswa.Name = "DGSiswa"
         Me.DGSiswa.RowHeadersWidth = 51
         Me.DGSiswa.RowTemplate.Height = 29
-        Me.DGSiswa.Size = New System.Drawing.Size(612, 262)
+        Me.DGSiswa.Size = New System.Drawing.Size(655, 262)
         Me.DGSiswa.TabIndex = 8
         '
         'btnAddData
@@ -259,7 +259,7 @@ Partial Class Student
         Me.btnAddData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnAddData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnAddData.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.btnAddData.Location = New System.Drawing.Point(538, 96)
+        Me.btnAddData.Location = New System.Drawing.Point(581, 96)
         Me.btnAddData.Margin = New System.Windows.Forms.Padding(0)
         Me.btnAddData.Name = "btnAddData"
         Me.btnAddData.Size = New System.Drawing.Size(75, 23)
@@ -273,7 +273,7 @@ Partial Class Student
         Me.btnDelete.BackColor = System.Drawing.Color.DarkRed
         Me.btnDelete.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnDelete.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.btnDelete.Location = New System.Drawing.Point(713, 96)
+        Me.btnDelete.Location = New System.Drawing.Point(756, 96)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(0)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(75, 23)

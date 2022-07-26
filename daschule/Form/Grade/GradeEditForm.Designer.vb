@@ -30,8 +30,6 @@ Partial Class GradeEditForm
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSaveData = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtKKM = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -49,23 +47,21 @@ Partial Class GradeEditForm
         Me.Panel1.Controls.Add(Me.btnCancel)
         Me.Panel1.Controls.Add(Me.btnSaveData)
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label5)
-        Me.Panel1.Controls.Add(Me.txtKKM)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.txtStudentsID)
-        Me.Panel1.Location = New System.Drawing.Point(132, 58)
+        Me.Panel1.Location = New System.Drawing.Point(127, 11)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(536, 334)
-        Me.Panel1.TabIndex = 3
+        Me.Panel1.Size = New System.Drawing.Size(541, 338)
+        Me.Panel1.TabIndex = 5
         '
         'cmbSubject
         '
         Me.cmbSubject.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cmbSubject.FormattingEnabled = True
-        Me.cmbSubject.Items.AddRange(New Object() {"Pendidikan Agama", "PPKn", "Bahasa Indonesia", "Matematika", "Bahasa Inggris", "Seni Budaya", "Pendidikan Jasmani", "Sejarah", "", "Biologi", "Kimia", "Fisika", "Matematika Peminatan", "", "Ekonomi", "Sosiologi", "Geografi", "Sejarah Peminatan", "", "Sastra Indonesia", "Sastra Inggris", "Antropologi", "Bahasa Jerman", "", "Al-Quran Hadist", "Fiqih", "Akidah Akhlak", "Bahasa Arab"})
+        Me.cmbSubject.Items.AddRange(New Object() {"M01", "M02", "M03", "M04", "M05", "M06", "M07", "M08", "M09", "M10", "M11", "M12", "M13", "M14", "M15", "M16", "M17", "M18", "M19", "M20", "M21", "M22", "M23", "M24"})
         Me.cmbSubject.Location = New System.Drawing.Point(237, 107)
         Me.cmbSubject.Name = "cmbSubject"
         Me.cmbSubject.Size = New System.Drawing.Size(205, 23)
@@ -76,7 +72,7 @@ Partial Class GradeEditForm
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(103, 246)
+        Me.Label4.Location = New System.Drawing.Point(103, 202)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(50, 16)
         Me.Label4.TabIndex = 20
@@ -86,7 +82,7 @@ Partial Class GradeEditForm
         'txtGrade
         '
         Me.txtGrade.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtGrade.Location = New System.Drawing.Point(237, 243)
+        Me.txtGrade.Location = New System.Drawing.Point(237, 199)
         Me.txtGrade.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtGrade.Name = "txtGrade"
         Me.txtGrade.Size = New System.Drawing.Size(205, 22)
@@ -96,7 +92,7 @@ Partial Class GradeEditForm
         '
         Me.cmbClass.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cmbClass.FormattingEnabled = True
-        Me.cmbClass.Items.AddRange(New Object() {"IPA 1", "IPA 2", "IPA 3", "IPA 4", "IPA 5", "IPS 1", "IPS 2", "IPS 3", "IPS 4", "IPS 5", "IPB", "AGAMA"})
+        Me.cmbClass.Items.AddRange(New Object() {"K010", "K011", "K012", "K013", "K014", "K015", "K016", "K017", "K018", "K019", "K020", "K021"})
         Me.cmbClass.Location = New System.Drawing.Point(237, 151)
         Me.cmbClass.Name = "cmbClass"
         Me.cmbClass.Size = New System.Drawing.Size(205, 23)
@@ -107,7 +103,7 @@ Partial Class GradeEditForm
         Me.btnCancel.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.btnCancel.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnCancel.ForeColor = System.Drawing.Color.Black
-        Me.btnCancel.Location = New System.Drawing.Point(306, 298)
+        Me.btnCancel.Location = New System.Drawing.Point(297, 249)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(0)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 23)
@@ -121,7 +117,7 @@ Partial Class GradeEditForm
         Me.btnSaveData.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(214, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.btnSaveData.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnSaveData.ForeColor = System.Drawing.Color.Black
-        Me.btnSaveData.Location = New System.Drawing.Point(181, 298)
+        Me.btnSaveData.Location = New System.Drawing.Point(172, 249)
         Me.btnSaveData.Margin = New System.Windows.Forms.Padding(0)
         Me.btnSaveData.Name = "btnSaveData"
         Me.btnSaveData.Size = New System.Drawing.Size(75, 23)
@@ -137,31 +133,10 @@ Partial Class GradeEditForm
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(103, 155)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(46, 16)
+        Me.Label7.Size = New System.Drawing.Size(63, 16)
         Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Class"
+        Me.Label7.Text = "Class Id"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(103, 202)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 16)
-        Me.Label5.TabIndex = 10
-        Me.Label5.Text = "KKM"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.BottomRight
-        '
-        'txtKKM
-        '
-        Me.txtKKM.Font = New System.Drawing.Font("Lato", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtKKM.Location = New System.Drawing.Point(237, 199)
-        Me.txtKKM.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txtKKM.Name = "txtKKM"
-        Me.txtKKM.Size = New System.Drawing.Size(205, 22)
-        Me.txtKKM.TabIndex = 9
         '
         'Label2
         '
@@ -170,9 +145,9 @@ Partial Class GradeEditForm
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(46, Byte), Integer), CType(CType(56, Byte), Integer), CType(CType(71, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(103, 109)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 16)
+        Me.Label2.Size = New System.Drawing.Size(76, 16)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Subject Name"
+        Me.Label2.Text = "Subject Id"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'Label1
@@ -223,17 +198,15 @@ Partial Class GradeEditForm
     End Sub
 
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents cmbSubject As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtGrade As TextBox
     Friend WithEvents cmbClass As ComboBox
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnSaveData As Button
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents txtKKM As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtStudentsID As TextBox
-    Friend WithEvents cmbSubject As ComboBox
 End Class

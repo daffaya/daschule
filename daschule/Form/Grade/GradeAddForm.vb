@@ -6,7 +6,6 @@ Public Class GradeAddForm
     Dim LoadGrades As New Grade
     Public Sub ClearGrade()
         txtStudentsID.Clear()
-        txtKKM.Clear()
         txtGrade.Clear()
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
@@ -28,7 +27,6 @@ Public Class GradeAddForm
                 .Parameters.AddWithValue("@id_siswa", txtStudentsID.Text)
                 .Parameters.AddWithValue("@id_mapel", cmbSubject.Text)
                 .Parameters.AddWithValue("@id_kelas", cmbClass.Text)
-                .Parameters.AddWithValue("@kkm", txtKKM.Text)
                 .Parameters.AddWithValue("@nilai", txtGrade.Text)
 
                 cmd.ExecuteNonQuery()
@@ -50,11 +48,6 @@ Public Class GradeAddForm
             MsgBox(ex.Message, vbCritical)
         End Try
 
-        Me.Hide()
-        Grade.Show()
     End Sub
 
-    Private Sub GradeAddForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class
